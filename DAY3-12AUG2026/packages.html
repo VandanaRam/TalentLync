@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;  
+        }
+        #header{
+            background-color:rgb(4, 31, 68);
+            color:white;
+            text-align:center;
+        }
+        #header h1{
+            padding:20px;
+        }
+        #header a{
+            color:white;
+            text-decoration:none;
+        }
+        #content{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            
+        }
+        #sidebar{
+            width: 20%;
+            background-color:rgba(9, 1, 24, 0.722);
+            color:white;
+            text-align:justify;
+            padding:10px;
+            height:100vh;
+        }
+        #main-content{
+            width:70%;
+            color:black;
+            text-align:center;
+            justify-content:center;
+            gap:0px;
+            height:100vh;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="index.html">Home</a> |
+        <a href="packages.html">Packages</a> | <a href="contactus.html">Contact Us</a></h1>
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            <h1>User Profile</h1>
+            <h1>Products</h1>
+            <h1>Services</h1>
+            <h1>Log Out</h1>
+        </div>
+        <div id="main-content">
+            <table border="1" style="width:80%; height:70vh; text-align:center; border-collapse:collapse;">
+                <tr>
+                    <th>Tool Name</th>
+                    <th>Purpose</th>
+                    <th>Price</th>
+                    <th>Usage</th>
+                    <th>Subscribe Now</th>
+                </tr>
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>Writing</td>
+                    <td>Free</td>
+                    <td>Versatile</td>
+                    <td><input type="button" value="Subscribe" /></td>
+                </tr>
+                <tr>
+                    <td>Claude</td>
+                    <td>Analysis</td>
+                    <td>Free</td>
+                    <td>Deep</td>
+                    <td><input type="button" value="Subscribe" /></td>
+                </tr>
+                <tr>
+                    <td>Midjourney</td>
+                    <td>Image Generation</td>
+                    <td>$10</td>
+                    <td>Creative</td>
+                    <td><input type="button" value="Subscribe" /></td>
+                </tr>
+
+        </div>
+    </div>
+</body>
+</html>

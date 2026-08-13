@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;  
+        }
+        #header{
+            background-color:rgb(4, 31, 68);
+            color:white;
+            text-align:center;
+        }
+        #header h1{
+            padding:20px;
+        }
+        #header a{
+            color:white;
+            text-decoration:none;
+        }
+        #content{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            
+        }
+        #sidebar{
+            width: 20%;
+            background-color:rgba(9, 1, 24, 0.722);
+            color:white;
+            text-align:justify;
+            padding:10px;
+            height:100vh;
+        }
+        #main-content{
+            width:60%;
+            background-color:rgba(206, 196, 224, 0.722);
+            color:black;
+            text-align:center;
+            gap:0px;
+            height:100vh;
+        }
+        #gap-m{
+            width:20%;
+            background-color:rgba(206, 196, 224, 0.722);
+            color:white;
+            text-align:justify;
+            padding:10px;
+            height:100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="index.html" >Home</a> |
+        <a href="packages.html" >Packages</a> | <a href="contactus.html" >Contact Us</a></h1>
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            <h1>User Profile</h1>
+            <h1>Products</h1>
+            <h1>Services</h1>
+            <h1>Log Out</h1>
+        </div>
+        <div id="main-content">
+            <h1>About Us</h1>
+            <img src="banner.avif" alt="banner" width="100%" height="300px"/>
+            <p>
+                <h4>We are a leading company in providing top-notch services and products to our valued customers. Our team is dedicated to ensuring customer satisfaction and delivering quality solutions that meet your needs. With years of experience in the industry, we pride ourselves on our commitment to excellence and innovation.</h4>
+            </p>
+            <div>
+                <h1>Subscribe Now</h1>
+                <form action="" method="GET">
+                    <input type="text" placeholder="Enter your name"/>
+                    <br/>
+                    <input type="email" placeholder="Enter your email"/>
+                    <br/>
+                    <input type="submit" value="Subscribe"/>
+                </form>
+            </div>
+        </div>
+        <div id="gap-m">
+
+        </div>
+    </div>
+</body>
+</html>

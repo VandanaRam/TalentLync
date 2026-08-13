@@ -1,0 +1,82 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;  
+        }
+        #header{
+            background-color:rgb(4, 31, 68);
+            color:white;
+            text-align:center;
+        }
+        #header h1{
+            padding:20px;
+        }
+        #header a{
+            color:white;
+            text-decoration:none;
+        }
+        #content{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            
+        }
+        #sidebar{
+            width: 20%;
+            background-color:rgba(9, 1, 24, 0.722);
+            color:white;
+            text-align:justify;
+            padding:10px;
+            height:100vh;
+        }
+        #main-content{
+            width:60%;
+            color:black;
+            text-align:justify;
+            gap:0px;
+            height:300px;
+            font-size:30px;
+            
+        }        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="index.html">Home</a> |
+        <a href="packages.html">Packages</a> | <a href="contactus.html">Contact Us</a></h1>
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            <h1>User Profile</h1>
+            <h1>Products</h1>
+            <h1>Services</h1>
+            <h1>Log Out</h1>
+        </div>
+        <div id="main-content">
+            <h1>Contact Us</h1>
+            <br/>
+            <form action="https://platinitee.com/talentlync/form.php" method="GET">
+    <label>User Name:</label>
+    <input type="text" minlength="3" maxlength="40" placeholder="Enter your name"/>
+    <br/><label>Email:</label>
+    <input type="email" placeholder="Enter your email"/>
+    <br/><label>Age:</label>
+    <input type="number" min="18" max="25" placeholder="Enter your age"/>
+    <br/><label>Date of Birth:</label>
+    <input type="date" min="01-01-2001" max="12-08-2026" placeholder="Enter your DOB"/>
+    <br/><input type="Submit" value="submit" style="
+    background-color:blue;
+    color:white;
+    border-radius:3px;"/>
+    </form>
+    </div>
+    </div>
+    
+</body>
+</html>
