@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step 1</title>
+    <style>
+        *{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0;
+
+        }
+        body{
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size:bold;
+        }
+        button{
+            width:250px;
+            height: 40px;
+            border-radius:30px;
+            border:1px solid white;
+            background-color: green;
+            color: black;
+            font-size: bold;
+            margin-top:30px;
+        }
+        .main{
+            display: flex;
+            text-align: left;
+            gap:40px;
+            margin-left:500px;
+        }
+        #line{
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        form{
+            margin-top: 20px;
+        }
+        .rad{
+            width: 20px;
+            padding: 0px;
+        }
+        .rad2{
+            display: inline-block;
+            width: auto;
+            margin-top: -50px;
+        }
+        input{
+            width:250px;
+            height: 40px;
+            border-radius:0px;
+            padding:10px;
+            background-color: #121212;
+            border:1px solid gray;
+            margin-bottom: 10px;
+            color: white;
+        }
+        footer{
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <center>
+        <div class="container">
+            <image src="logo.png" alt="logo" width="50px" height="50px"/>
+            <p id="line"></p>
+            <div class="main">
+                <div> <img src="left-arrow.jpg" alt="Left Arrow" width="50px" height="50px" /> </div>
+                <div class="side">
+                    <p>Step 2 of 3</p>
+                    <h5>Tell us about yourself</h5>
+                
+            
+            <form action="register3.html" method="post">
+                <h3>Name</h3>
+                <p>This name will appear on your profile.</p>
+                <input type="text" minlength="3" />
+                <h3>Date of birth</h3>
+                <p>Why do we need your date of birth?<a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Learn more</a></p>
+                <input type="date" /><br/>
+                <h3>Gender</h3>
+                <p>We use your gender to help personalize our content<br/> recommendations and ads for you.</p>
+                <input type="radio" name="gender" value="male" class="rad" /> <p class="rad2">Male</p>
+                 <input type="radio" name="gender" value="female" class="rad" /> <p class="rad2">Female</p> 
+                 <input type="radio" name="gender" value="non-binary" class="rad" /> <p class="rad2">Non-binary</p><br/>
+                 <input type="radio" name="gender" value="Something else" class="rad" /> <p class="rad2">Something else</p>
+                 <input type="radio" name="gender" value="Prefer not to say" class="rad" /> <p class="rad2">Prefer not to say</p>
+                <br/>
+                <button type="submit">Next</button>
+            </form>
+        <footer>This site is protected by reCAPTCHA and the Google<br/>
+<a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</footer>
+            </div>
+        </div>
+        </center>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align:center;
+        }
+        body{
+            background-color: #121212;
+            color: white;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size:bold;
+            margin:10px;
+        }
+        button{
+            width:250px;
+            height: 40px;
+            border-radius:30px;
+            border:1px solid white;
+            background-color: #121212;
+            color: white;
+            font-size: bold;
+            margin: 10px;
+        }
+        input{
+            width:250px;
+            height: 40px;
+            border-radius:0px;
+            padding:10px;
+            background-color: #121212;
+            border:1px solid gray;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .email{
+            margin-left:-140px;
+            margin-top:20px;
+            margin-bottom:10px;
+        }
+        .next{
+            background-color:green;
+        }
+        footer{
+            margin-top:50px;
+        }
+        button:hover{
+            width: 260px;
+            height:45px;
+        }
+        .next:hover{
+            width: 250px;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <image src="logo.png" alt="logo" width="50px" height="50px"/>
+            <h1>Sign up to</h1>
+            <h3>start listening</h3>
+            <form action="register1.html" method="post">
+            <p class="email">Email address</p>
+            <input type="email" placeholder="name@domain.com"/><br/>
+            <button type="submit" class="next">Next</button>
+            <p>or</p>
+            <button type="submit"><p><img src="phone-logo.png" width="20px" height="20px" alt="Phone Icon"/>     Sign up with Phone number</p></button>
+            <br/><button type="submit"><p><img src="google.webp" width="20px" height="20px" alt="google Icon"/>     Sign up with Google</p></button>
+            <br/>
+            <button type="submit"><p><img src="apple.png" width="20px" height="20px" alt="Apple Icon"/>     Sign up with Apple</p></button>
+            </form>   
+            <br/>
+            <p>Already have an account?</p>
+            <h4>Log in</h4>
+            <footer>This site is protected by reCAPTCHA and the Google
+<a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</footer>
+        </div>
+    </section>
+</body>
+</html>

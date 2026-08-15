@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step 1</title>
+    <style>
+        *{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0;
+
+        }
+        body{
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size:bold;
+        }
+        button{
+            width:250px;
+            height: 40px;
+            border-radius:30px;
+            border:1px solid white;
+            background-color: green;
+            color: black;
+            font-size: bold;
+            margin-top:70px;
+        }
+        .main{
+            display: flex;
+            text-align: left;
+            gap:40px;
+            margin-left:500px;
+        }
+        #line{
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        form{
+            margin-top: 20px;
+        }
+        input[type="password"]{
+            width:250px;
+            height: 40px;
+            border-radius:0px;
+            padding:10px;
+            background-color: #121212;
+            border:1px solid gray;
+            margin-bottom: 10px;
+            color: white;
+        }
+        footer{
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <center>
+        <div class="container">
+            <image src="logo.png" alt="logo" width="50px" height="50px"/>
+            <p id="line"></p>
+            <div class="main">
+                <div> <img src="left-arrow.jpg" alt="Left Arrow" width="50px" height="50px" /> </div>
+                <div class="side">
+                    <p>Step 1 of 3</p>
+                    <h5>Create a password</h5>
+                
+            
+            <form action="register2.html" method="post">
+                <p>Password</p>
+                <input type="password" minlength="10" />
+                <p>Your password must contain at least</p>
+                <input type="radio" value="1letter" />1letter<br/>
+                <input type="radio" value="1number or special character (example: #?!&)"/>1number or special character (example: #?!&)<br/>
+                <input type="radio" value="10 characters"/>10 characters<br/>
+                <button type="submit">Next</button>
+            </form>
+        <footer>This site is protected by reCAPTCHA and the Google<br/>
+<a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</footer>
+            </div>
+        </div>
+        </center>
+    </section>
+    
+</body>
+</html>
