@@ -1,0 +1,9 @@
+const Wishlist = (() => {
+ const key=()=>{const u=Auth.getCurrent();return `pulse_wishlist_${u?.email||'guest'}`};
+ const get=()=>JSON.parse(localStorage.getItem(key())||'[]');
+ const save=ids=>localStorage.setItem(key(),JSON.stringify(ids));
+ const has=id=>get().includes(Number(id));
+ const toggle=id=>{id=Number(id);const ids=get(),i=ids.indexOf(id);if(i>=0){ids.splice(i,1);save(ids);return false}ids.push(id);save(ids);return true};
+ function render(){const list=document.getElementById('wishlist-list'),empty=document.getElementById('wishlist-empty');if(!list)return;const songs=get().map(id=>SONGS.find(s=>s.id===id)).filter(Boolean);list.innerHTML='';songs.forEach((s,i)=>{const row=document.createElement('div');row.className='wishlist-row';row.innerHTML=`<img class="row-cover" src="${s.cover}" alt="${s.title} cover"><div class="row-main"><strong>${s.title}</strong><span>${s.artist}</span></div><span class="row-muted">${s.album}</span><span class="row-muted">${s.genre}</span><span class="row-muted">${s.duration}</span><div class="row-actions"><button class="mini-btn play-row" data-id="${s.id}" aria-label="Play ${s.title}">▶</button><button class="mini-btn remove-row" data-id="${s.id}" aria-label="Remove ${s.title}">×</button></div>`;list.appendChild(row)});empty.hidden=songs.length>0;list.hidden=songs.length===0;list.querySelectorAll('.play-row').forEach(b=>b.addEventListener('click',()=>Player.playById(Number(b.dataset.id))));list.querySelectorAll('.remove-row').forEach(b=>b.addEventListener('click',()=>{toggle(b.dataset.id);render();App.toast('✓ Song removed from wishlist')}));const playAll=document.getElementById('play-all');if(playAll)playAll.onclick=()=>{if(songs.length)Player.playById(songs[0].id);else App.toast('Save some songs first.','error')};}
+ return {get,has,toggle,render};
+})();
